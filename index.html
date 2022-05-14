@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapapote</title>
+    <style>
+        body {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqRTx1pUzxBr7OLjIdLJ_nG4C1KBoM4FNWMw&usqp=CAU);
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 2em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        div#e {
+            margin: 0px auto;
+            width: 100px;
+        }
+        p {
+            color: white;
+            font-size: 1.5em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Andréinha Rapapote! Tudo bem com você?</h1>
+    <div id="e">
+        <button id="sim">Sim</button>
+        <button id="nao">Não</button>
+        <p id="res"></p>
+    </div>
+    <script>
+        var res_respondido = false
+        var res = document.getElementById('res')
+        document.querySelector("button#sim").addEventListener("click", ()=>{
+            res.innerHTML = 'Que bom!'
+        })
+        document.querySelector("button#nao").addEventListener("click", ()=>{
+            res.innerHTML = 'Por que? Só por que eu chamei você de rapapote?'
+        })
+    </script>
+</body>
+</html>
